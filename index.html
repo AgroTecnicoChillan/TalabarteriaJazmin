@@ -777,7 +777,13 @@
             border-radius: 8px; /* Si quieres bordes redondeados */
             box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra suave para que destaque */
             }
-
+    @media (max-width: 600px) {
+             .hero h1 {
+             font-size: 2.2rem; /* Más pequeño para pantallas chicas */
+             padding: 0 1rem;    /* Espacio lateral para evitar que se corte */
+             word-break: break-word; /* Permite que las palabras se dividan si es necesario */
+              }
+           }
         }
     </style>
 </head>
