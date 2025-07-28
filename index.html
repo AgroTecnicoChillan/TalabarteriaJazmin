@@ -102,20 +102,7 @@
             padding: 0 2.5rem; /* Más espacio a los lados */
         }
 
-        .logo {
-            color: var(--soft-cream);
-            font-family: 'Playfair Display', serif; /* Fuente más distintiva para el logo */
-            font-size: 2rem; /* Tamaño del logo un poco más grande */
-            font-weight: 700;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        .logo i {
-            color: var(--antique-gold); /* Icono con color oro envejecido */
-        }
+     
 
         .nav-menu {
             display: flex;
@@ -625,6 +612,20 @@
             text-align: center;
             color: var(--taupe-gray);
         }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* espacio entre imagen y texto */
+            text-decoration: none;
+            color: inherit;
+         }
+        .logo-img {
+            height: 60px; /* o el tamaño que prefieras */
+            width: auto;  /* mantiene la proporción */
+            vertical-align: middle; /* alinea con el texto */
+         }
+
+
 
         /* Animations */
         @keyframes fadeInUp {
@@ -782,7 +783,7 @@
     <header class="header" id="header">
         <nav class="nav-container">
             <a href="#inicio" class="logo">
-                 <img src="images/logo.jpg" alt="logo">Talabartería Jazmín
+                 <img src="images/logo.jpg " alt="logo" class="logo-img">Talabartería Jazmín
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
